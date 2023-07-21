@@ -34,8 +34,12 @@ import MTesting from "./Component/service/SubServices/MTesting";
 import Privacy from "./Pages/Privacy/Privacy";
 import Terms from "./Pages/Terms/Terms";
 import EnquireInfo from "./Pages/Enquiry/EnquireInfo";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <BrowserRouter>

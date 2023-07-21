@@ -1,6 +1,7 @@
 import React from 'react'
 import "./style.css"
 function Success() {
+  
   return (
     <div classNameName='body'>
        <div className="card">

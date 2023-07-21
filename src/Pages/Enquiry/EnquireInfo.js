@@ -56,6 +56,9 @@ function EnquireInfo() {
       });
   };
   console.log(watch("example"));
+
+
+  
   return (
     <>
       <div>

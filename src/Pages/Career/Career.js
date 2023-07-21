@@ -28,6 +28,8 @@ import careerimg from "../../assets/Img/careerimg.png";
 
 function Careers() {
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     AOS.init({
       useClassNames: true,
       initClassName: false,
@@ -158,7 +160,7 @@ function Careers() {
           </p>
         </article>
 
-      <CareerInfo/>
+        <CareerInfo />
       </MDBContainer>
 
       {/* Career form  */}

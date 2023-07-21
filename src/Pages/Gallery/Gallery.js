@@ -19,6 +19,9 @@ import Weburls from "../../Redux/ApI/Weburls";
 import MCard from "../../utility/MCard";
 
 function Gallery() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const [basicActive, setBasicActive] = useState("All");
 
   const [galleryallData, setgalleryallData] = useState([]);
@@ -45,6 +48,7 @@ function Gallery() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     api();
   }, []);
 

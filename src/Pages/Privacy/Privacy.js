@@ -1,8 +1,12 @@
 import { MDBContainer } from "mdb-react-ui-kit";
-import React from "react";
+import React, { useEffect } from "react";
 import FooterDegin from "../../Component/Footer/FooterDegin";
 
 function Privacy() {
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+
+  },[])
   return (
     <>
       <MDBContainer className="my-5">

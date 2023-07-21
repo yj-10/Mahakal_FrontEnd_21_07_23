@@ -18,6 +18,8 @@ function GalleryParts() {
     setGalleryParts(data);
   };
   useEffect(() => {
+    window.scrollTo(0, 0)
+
     api();
   }, [0]);
   return (

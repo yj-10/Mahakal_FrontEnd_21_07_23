@@ -37,11 +37,15 @@ function Footerone() {
 
           <MDBRow className="mb-5">
             <MDBCol lg={6} md={6} sm={12}>
-              <h3 className="text-white text-start  mb-4" style={{letterSpacing:"1px",fontSize:"38px" }}>Subscribe for More Updates</h3>
+              <h3
+                className="text-white text-start  mb-4"
+                style={{ letterSpacing: "1px", fontSize: "38px" }}
+              >
+                Subscribe for More Updates
+              </h3>
             </MDBCol>
             <MDBCol lg={6} md={6} sm={12} className="mb-4">
-            <Subscribe />
-
+              <Subscribe />
             </MDBCol>
           </MDBRow>
 
@@ -68,8 +72,6 @@ function Footerone() {
                   <p className="text-white">
                     <AiOutlineHome className="h2" /> 220 kailash kuti talawali
                     chanda A.B Road, Indore
-                    
-                    
                     <br />
                     <i>
                       <AiOutlineMail className="h2" />
@@ -93,44 +95,44 @@ function Footerone() {
                   </h2>
                   <ul className="list-unstyled">
                     <li>
-                      <a
-                        href={"/Parts"}
+                      <Link
+                        to={"/Parts"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         Parts
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href={"/Product"}
+                      <Link
+                        to={"/Product"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         Products
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href={"/Project"}
+                      <Link
+                        to={"/Project"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         Projects
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href={"/Contact"}
+                      <Link
+                        to={"/Contact"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href={"/Career"}
+                      <Link
+                        to={"/Career"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         Career
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -140,37 +142,36 @@ function Footerone() {
                   </h2>
                   <ul className="list-unstyled">
                     <li>
-                      <a
-                        href={"/Laboratery"}
-                      
+                      <Link
+                        to={"/Laboratery"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         R &amp; D Laboratory
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href={"/About"}
+                      <Link
+                        to={"/About"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href={"/Blog"}
+                      <Link
+                        to={"/Blog"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         Blogs
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href={"/Gallery"}
+                      <Link
+                        to={"/Gallery"}
                         className="py-1 text-decoration-none h5 d-block"
                       >
                         Gallery
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -219,7 +220,7 @@ function Footerone() {
                           <div className="footer_social_icn">
                             <i>
                               <AiOutlineTwitter className="text-white" />
-                            </i> 
+                            </i>
                           </div>
                         </a>
                       </li>
@@ -243,14 +244,14 @@ function Footerone() {
           <hr className="text-white" />
           <div className="app_sub_footer">
             <p className="pera text-white">
-              Copyright © 2023. All Rights Reserved.
+              Copyright &copy; {new Date().getFullYear()} All Rights Reserved.
             </p>
             <ul>
               <li>
-                <a href="/Privacy">Privacy Policy </a>
+                <Link to="/Privacy">Privacy Policy </Link>
               </li>
               <li>
-                <a href={"/Terms"}>Terms & Condition </a>
+                <Link to={"/Terms"}>Terms & Condition </Link>
               </li>
             </ul>
           </div>
