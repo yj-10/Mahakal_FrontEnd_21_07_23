@@ -19,7 +19,6 @@ import Project from "./Pages/Project/Project";
 import Gallery from "./Pages/Gallery/Gallery";
 import Career from "./Pages/Career/Career";
 import FRPFan from "./Component/Product/subProduct/FRPFan";
-
 import FanBlads from "./Component/Product/subProduct/FanBlads";
 import Rcc_Cooling_tower from "./Component/Product/subProduct/Rcc_Cooling_tower";
 import WoodenCooling from "./Component/Product/subProduct/woodenCooling";
@@ -55,7 +54,6 @@ function App() {
           <Route path="/Rcc_Cooling_tower" element={<Rcc_Cooling_tower />} />
           <Route path="/WoodenCooling" element={<WoodenCooling />} />
           <Route path="/Gearbox" element={<Gearbox />} />
-
           <Route path="/Career" element={<Career />} />
           <Route path="/Parts" element={<Parts />} />
           <Route path="/Industries" element={<Industries />} />
@@ -66,9 +64,7 @@ function App() {
           <Route path="/FFEAnalysis" element={<FFEAnalysis />} />
           <Route path="/GearboxDIagonstics" element={<GearboxDIagonstics />} />
           <Route path="/Reconstruction" element={<Reconstruction />} />
-
           <Route path="/TPTesting" element={<TPTesting />} />
-
           <Route path="/Project" element={<Project />} />
           <Route path="/Laboratery" element={<Laboratery />} />
           <Route path="/Gallery" element={<Gallery />} />
