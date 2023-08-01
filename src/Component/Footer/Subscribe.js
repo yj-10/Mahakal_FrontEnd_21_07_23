@@ -6,18 +6,34 @@ import Weburls from "../../Redux/ApI/Weburls";
 import MButton from "../../utility/MButton";
 import MInput from "../../utility/MInput";
 import SuccessModel from "../../utility/SuccessModel";
+import { useForm } from "react-hook-form";
 function Subscribe() {
-  const [Subscribedata, setSubscribedata] = useState("");
-  console.log("........", Subscribedata);
   const [SuccessLoader, setSuccessLoader] = useState(false);
-  const HandleSubmit = (e) => {
-    e.preventDefault();
-    console.log("........", Subscribedata);
 
-    axios
-      .post(Weburls.SubPostapi, { ...Subscribedata })
+  const {
+    reset,
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      Email: "",
+    },
+  });
+
+  const onSubmit = (data) => {
+    // e.preventDefault();
+
+    console.log(data);
+    console.log("alert");
+
+    const result = axios
+      .post(Weburls.SubPostapi, {
+        ...data,
+      })
       .then((res) => {
-        setSubscribedata("");
+        reset();
 
         setSuccessLoader(true);
         document.body.style.overflow = "hidden";
@@ -31,20 +47,25 @@ function Subscribe() {
         setSuccessLoader(false);
       });
   };
+  console.log(watch("example"));
+
+  // console.log("........", Email);
 
   return (
     <>
-      <form action="#" className="subscribe-form " onSubmit={HandleSubmit}>
+      <form
+        action="#"
+        className="subscribe-form "
+        onSubmit={handleSubmit(onSubmit)}
+      >
         {/* <h2 className="text-white mr-4">Subscribe For Updates</h2> */}
 
         <div className="form-group d-flex">
           <input
-            type="email"
-            className="form-control rounded-left "
-            placeholder="Enter email address"
-            onChange={(e) => setSubscribedata(e.target.value)}
-            value={Subscribedata}
-            required
+            {...register("Email", { required: true })}
+            name={"Email"}
+            className={" w-100 p-2"}
+            label="Enter your Email"
           />
           <input
             type="submit"
