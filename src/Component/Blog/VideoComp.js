@@ -35,7 +35,7 @@ function VideoComp() {
                     src={items.video}
                     // src={`http://localhost:5000/${items.video}`}
                     className="img-thumbnail w-100"
-                    style={{ height: "200px", width: "100%" }}
+                    style={{ height: "250px", width: "100%" }}
                     alt="..."
                   />
                 </MDBCol>

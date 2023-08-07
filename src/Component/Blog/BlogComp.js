@@ -7,7 +7,6 @@ import { useState } from "react";
 import axios from "axios";
 import Weburls from "../../Redux/ApI/Weburls";
 import { useEffect } from "react";
-
 function BlogComp() {
   const [BlogData, setBlogData] = useState([]);
   console.log("BlogData////////////", BlogData);
@@ -29,7 +28,7 @@ function BlogComp() {
             return (
               <MDBRow className="mb-4">
                 <MDBCol md="4">
-                  <img src={item.Photo} className="img-thumbnail" alt="..." />
+                  <img src={item.Photo} className="img-thumbnail w-100 "   style={{ height: "250px" }} alt="..." />
                 </MDBCol>
                 <MDBCol md="8">
                   <h2>{item.name} </h2>

@@ -37,7 +37,11 @@ function ProjectMid() {
               return (
                 <MDBRow className="mb-4">
                   <MDBCol md="4 ">
-                    <img src={item.image} className="img-fluid w-100" />
+                    <img
+                      src={item.image}
+                      style={{ height: "250px" }}
+                      className="img-fluid w-100"
+                    />
                   </MDBCol>
                   <MDBCol md="8" className="">
                     <h2 className="px-1 ">{item.title}</h2>
@@ -60,6 +64,3 @@ function ProjectMid() {
 }
 
 export default ProjectMid;
-
-
-

@@ -64,7 +64,7 @@ function Subscribe() {
           <input
             {...register("Email", { required: true })}
             name={"Email"}
-            className={" w-100 p-2"}
+            className="form-control rounded-left "
             label="Enter your Email"
           />
           <input

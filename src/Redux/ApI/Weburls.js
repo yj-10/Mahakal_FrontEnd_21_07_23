@@ -1,5 +1,4 @@
-const baseUrl = "http://15.207.221.5:7000";
-
+const baseUrl = "http://127.0.0.1:7000";
 const Weburls = {
   galleryapi: `${baseUrl}/api/v1/Galleryget`,
   Bloggetapi: `${baseUrl}/api/v1/getapi`,
@@ -11,7 +10,6 @@ const Weburls = {
   ContactPostapi: `${baseUrl}/api/v1/ContactPost`,
   SliderGetapi: `${baseUrl}/api/v1/SliderGet`,
   SubPostapi: `${baseUrl}/api/v1/SubPost`,
-
   Videoapi: `${baseUrl}/api/v1/VideoGet`,
 
   // Product api
