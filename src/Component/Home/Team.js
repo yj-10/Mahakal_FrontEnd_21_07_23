@@ -41,7 +41,7 @@ const Team = () => {
                                 </figure>
                                 <div className='team_card_details'>
                                     <h4 className='h4_title'>Ravi kant</h4>
-                                    <p className='pera'>SEO</p>
+                                    <p className='pera'>CEO</p>
                                 </div>
                             </div>
                         </Col>
